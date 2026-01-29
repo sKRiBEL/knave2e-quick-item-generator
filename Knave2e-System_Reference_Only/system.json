@@ -1,0 +1,46 @@
+{
+    "id": "knave2e",
+    "title": "Knave Second Edition (Unofficial)",
+    "description": "The (Unofficial) Knave Second Edition system for FoundryVTT, distributed with approval from Questing Beast, LLC. (This Fork Is For Foundry v13)",
+    "authors": [
+        {
+            "name": "Lee Talman",
+            "discord": ".pizzawizard",
+            "flags": {}
+        }
+    ],
+    "url": "https://github.com/Lee-Talman/knave2e",
+    "license": "https://github.com/Lee-Talman/knave2e/blob/main/LICENSE.txt",
+    "readme": "https://github.com/Lee-Talman/knave2e/blob/main/README.md",
+    "bugs": "https://github.com/Lee-Talman/knave2e/issues",
+    "changelog": "https://github.com/Lee-Talman/knave2e/blob/main/CHANGELOG.md",
+    "version": "0.5.4",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "13",
+        "maximum": "13"
+    },
+    "esmodules": [
+        "module/knave2e.mjs"
+    ],
+    "styles": [
+        "css/knave2e.css"
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json",
+            "flags": {}
+        }
+    ],
+    "manifest": "https://github.com/sKRiBEL/knave2e/releases/latest/download/system.json",
+    "download": "https://github.com/sKRiBEL/knave2e/releases/download/patch/system.zip",
+    "background": "systems/knave2e/assets/anvil-bg.png",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "primaryTokenAttribute": "hitPoints",
+    "secondaryTokenAttribute": "wounds"
+}
