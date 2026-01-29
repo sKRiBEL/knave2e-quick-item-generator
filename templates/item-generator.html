@@ -1,0 +1,39 @@
+<section class="knave2e-item-generator">
+  <header class="wizard-header">
+    <h2>{{prompt}}</h2>
+    <p class="wizard-step">Step {{stepNumber}} of {{totalSteps}}</p>
+  </header>
+
+  <div class="wizard-body">
+    <input
+      type="text"
+      name="prompt-input"
+      placeholder="{{placeholder}}"
+      value="{{value}}"
+      list="{{#if isImageStep}}knave2e-item-image-list{{/if}}"
+      autocomplete="off"
+    />
+
+    {{#if isImageStep}}
+      <datalist id="knave2e-item-image-list">
+        {{#each imageOptions}}
+          <option value="{{this}}"></option>
+        {{/each}}
+      </datalist>
+    {{/if}}
+
+    {{#if summary}}
+      <pre class="wizard-summary">{{summary}}</pre>
+    {{/if}}
+
+    {{#if confirm}}
+      <p class="wizard-hint">Press Enter to create the item.</p>
+    {{else}}
+      {{#if isImageStep}}
+        <p class="wizard-hint">Type a path or use arrow keys to pick from the list, then press Enter.</p>
+      {{else}}
+        <p class="wizard-hint">Type your response and press Enter.</p>
+      {{/if}}
+    {{/if}}
+  </div>
+</section>

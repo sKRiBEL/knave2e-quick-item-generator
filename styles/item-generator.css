@@ -1,0 +1,28 @@
+.knave2e-item-generator {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.knave2e-item-generator .wizard-header h2 {
+  margin: 0;
+}
+
+.knave2e-item-generator .wizard-body input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.knave2e-item-generator .wizard-summary {
+  margin: 0.5rem 0 0;
+  padding: 0.5rem;
+  background: rgba(0, 0, 0, 0.05);
+  white-space: pre-wrap;
+}
+
+.knave2e-item-generator .wizard-hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
